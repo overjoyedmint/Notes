@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+
+  height: 100%;
+  width: 100%;
+background-image:url('https://www.thespruce.com/thmb/0ofxY9OHx2LnJ9QhfI9B9iHR9Mg=/4368x2912/filters:no_upscale():max_bytes(150000):strip_icc()/colorful-flowers-157476831-937e2e5bf9a24375a34575cdc050c090.jpg') ;
+  overflow-x: hidden;
+background-position:center ;
+  background-color: rgb(241, 237, 231);
+  margin: 0;
+}
+
+#main_container_background {
+  display: flex;
+  
+  width: 100%;
+
+}
+
+.empty1,
+.empty {
+  flex: 1;
+  /* border: black solid 2px; */
+}
+
+.empty {
+  order: 1;
+}
+.empty1 {
+  order: 3;
+}
+
+h1 {
+  font-family: 'Raleway';
+  position: absolute;
+  top: 0px;
+
+  color: white;
+  width: 300px;
+  font-size: 50px;
+}
+#input_and_title_container {
+  margin-top: 50px;
+  position: relative;
+  height: 700px;
+  max-width: 450px;
+  min-width: 400px;
+backdrop-filter: blur(6px);
+background-color: rgba(207, 183, 213, 0.5);
+
+  align-items: center;
+
+  justify-items: center;
+  padding: 20px;;
+  
+ box-shadow: 0 0 20px rgb(120, 115, 115);
+  border-radius: 20px;
+  order: 2;
+ 
+
+  flex: 2;
+  z-index: 10;
+}
+
+input {
+  position: absolute;
+  width: 300px;
+  height: 30px;
+  top: 100px;
+  left: 0px;
+  border-radius: 5px;
+  border: none;
+  margin-left: 20px;
+  padding-left: 10px;
+}
+
+input:focus{
+ outline: none;
+}
+
+#add {
+  position: absolute;
+  width: 40px;
+  height: 30px;
+  color: blueviolet;
+  top: 100px;
+  background-color: white;
+  left: 280px;
+  border-bottom-right-radius:5px; border-top-right-radius:  5px;
+  border: none;
+  cursor: pointer;
+  background-color: lavender;
+}
+#add:active{
+  background-color: lightpink;
+}
+button:focus{
+  outline:none
+}
+
+.trash_button:active, .check_button:active{
+   background-color: rgb(243, 215, 219);
+}
+
+.button_and_answerHolder{
+  display:flex;
+  /* border: pink 2px solid; */
+  margin: 15px;
+  margin-left: 0px;
+}
+.trash_button, .check_button{
+  margin-left: 10px;
+  width: 20px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  color: rgb(145, 125, 164);
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.check_button{
+  position: absolute;
+  left: 330px;
+  
+}
+.trash_button{
+  position: absolute;
+  left: 300px;
+}
+
+.holder{
+  background-color: white;
+  width: 280px;
+  min-height: 22px;
+  border-radius: 5px;;
+  padding-left: 10px;
+  padding-top: 2PX;
+}
+
+.holder.completed{
+  text-decoration: line-through;
+  text-decoration-color: rgb(223, 208, 220);
+  font-style: italic;
+   color: rgb(83, 71, 96); 
+  background-color: rgb(174, 161, 191);
+}
+
+
+#output_container{
+  position: absolute;
+  /* border: white solid 2px  ; */
+  top:150px;
+  color: black;
+
+}
+
